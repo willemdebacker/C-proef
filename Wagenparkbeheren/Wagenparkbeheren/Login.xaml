@@ -1,0 +1,22 @@
+﻿<Window x:Class="Wagenparkbeheren.InlogScherm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wagenparkbeheren"
+        mc:Ignorable="d"
+        Title="Login" Height="493" Width="472" Background="#04c582">
+    <Border Background="#2e3137" CornerRadius="20" Margin="20" >
+        <StackPanel Margin="20">
+            <Label Content="Login" Foreground="White" FontSize="25" HorizontalAlignment="Center"></Label>
+            <Separator></Separator>
+            <Label Content="Username" Foreground="White"></Label>
+            <TextBox Name="textBoxVoornaam" Background="#545d6a" Foreground="White" FontSize="18"></TextBox>
+            <Label Content="Password" Foreground="White"></Label>
+            <PasswordBox Name="textBoxPaswoord" Background="#545d6a" Foreground="White" FontSize="18"></PasswordBox>
+            <Button Name="btnSubmit" Content="Inloggen" Margin="16,16,10,10" Background="#545d6a" Foreground="White" FontSize="18" Click="buttonInloggen_Click"></Button>
+
+        </StackPanel>
+    </Border>
+
+</Window>

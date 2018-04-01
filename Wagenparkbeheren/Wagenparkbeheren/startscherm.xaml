@@ -1,0 +1,19 @@
+﻿<Window x:Class="Wagenparkbeheren.startscherm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wagenparkbeheren"
+        mc:Ignorable="d"
+        Title="startscherm" Height="768" Width="1024">
+    <Viewbox Stretch="Fill">
+    <Grid Margin="0,0,2,0">
+        <Button x:Name="OverzichtWagensButton" Content="Overzicht Wagens" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" Height="32" Click="OverzichtWagensButton_Click"/>
+        <Button x:Name="OverzichtReservatiesButton" Content="Overzicht Reservatie's" HorizontalAlignment="Left" Margin="226,10,0,0" VerticalAlignment="Top" Width="200" Height="32" Click="OverzichtReservatiesButton_Click"/>
+        <Button x:Name="AfmeldenButton" Content="Afmelden" HorizontalAlignment="Left" Margin="778,672,50,50" VerticalAlignment="Top" Width="174" Height="32" Click="AfmeldenButton_Click"/>
+        <Button x:Name="OverzichtContractenButton" Content="Overzicht onderhoudscontracten" HorizontalAlignment="Left" Margin="664,10,0,0" VerticalAlignment="Top" Width="200" Height="32"/>
+        <Button x:Name="OverzichtPersoneelButton" Content="Overzicht Personeel" HorizontalAlignment="Left" Margin="445,10,0,0" VerticalAlignment="Top" Width="200" Height="32" Click="OverzichtPersoneelButton_Click"/>
+        <Button x:Name="NieuweReservatieButton" Content="nieuwe reservatie" HorizontalAlignment="Left" Margin="536,672,0,20" VerticalAlignment="Top" Width="200" Height="32"/>
+    </Grid>
+        </Viewbox>
+</Window>

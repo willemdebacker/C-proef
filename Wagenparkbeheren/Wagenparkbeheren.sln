@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wagenparkbeheren", "Wagenparkbeheren\Wagenparkbeheren.csproj", "{DF7CD744-BBE6-43DA-8DE8-243AC697BE56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoWagenpark", "AdoWagenpark\AdoWagenpark.csproj", "{811D81FD-AFC3-4DB8-9676-0603B4F688EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF7CD744-BBE6-43DA-8DE8-243AC697BE56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF7CD744-BBE6-43DA-8DE8-243AC697BE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF7CD744-BBE6-43DA-8DE8-243AC697BE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF7CD744-BBE6-43DA-8DE8-243AC697BE56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{811D81FD-AFC3-4DB8-9676-0603B4F688EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811D81FD-AFC3-4DB8-9676-0603B4F688EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811D81FD-AFC3-4DB8-9676-0603B4F688EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811D81FD-AFC3-4DB8-9676-0603B4F688EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

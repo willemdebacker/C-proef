@@ -1,0 +1,43 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wagenparkbeheren"
+        xmlns:AdoWagenpark="clr-namespace:AdoWagenpark;assembly=AdoWagenpark" x:Class="Wagenparkbeheren.Overzicht_Wagens"
+        mc:Ignorable="d"
+        Title="Overzicht_Wagens" Height="768" Width="1024" Loaded="Window_Loaded">
+    <Window.Resources>
+
+    </Window.Resources>
+
+    <DockPanel LastChildFill="true" RenderTransformOrigin="0.506,0.428">
+        <Border Height="30" Background="Gray" BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Top">
+            <StackPanel HorizontalAlignment="Center" Margin="0,0,0,0" Name="stackPanel1" Width="410" Orientation="Horizontal">
+
+                <ComboBox Width="171" x:Name="comboBoxSoorten" Background="Beige" SelectionChanged="comboBoxSoorten_SelectionChanged"  />
+            </StackPanel>
+
+        </Border>
+
+        <Grid Margin="0,0,2,0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="551*"/>
+                <ColumnDefinition Width="463*"/>
+            </Grid.ColumnDefinitions>
+            <DataGrid x:Name="wagenDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="0,10,0,117" RowDetailsVisibilityMode="VisibleWhenSelected" ColumnWidth="auto" Grid.ColumnSpan="2">
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="kleurColumn" Binding="{Binding Kleur}" Header="Kleur" />
+                    <DataGridTextColumn x:Name="merkColumn" Binding="{Binding Merk}" Header="Merk" />
+                    <DataGridTextColumn x:Name="nummerplaatColumn" Binding="{Binding Nummerplaat}" Header="Nummerplaat"/>
+                    <DataGridTextColumn x:Name="soortColumn" Binding="{Binding Soort}" Header="Soort" />
+                    <DataGridTextColumn x:Name="typeColumn" Binding="{Binding Type}" Header="Type" />
+                    <DataGridTextColumn x:Name="wagen_IDColumn" Binding="{Binding Wagen_ID}" Header="Wagen ID" IsReadOnly="True" />
+                    <DataGridTextColumn x:Name="wagenpark_IDColumn" Binding="{Binding Wagenpark_ID}" Header="Wagenpark ID" />
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button x:Name="returnButton" Content="Back to Mainscreen" Grid.Column="1" HorizontalAlignment="Left" Margin="289,644,0,0" VerticalAlignment="Top" Width="136" Height="32" Click="returnButton_Click"/>
+        </Grid>
+    </DockPanel>
+
+</Window>
